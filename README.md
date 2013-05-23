@@ -74,15 +74,13 @@ Now that you have everything in the right place, we need to tell Yii that we hav
 
 Under the main Web application configuration array, you need to add the following lines like this:
 
+`webroot/protected/config/main.php`
 	<?php
 	// Define a path alias for the Bootstrap extension as it's used internally.
 	// In this example we assume that you unzipped the extension under protected/extensions.
 	Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap/');
 	 
 	return array(
-		'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-		'name'=>'My Beautiful Flat UI Website',
-
 	    'theme'=>'bootstrap',
 	    'modules'=>array(
 	        'gii'=>array(
