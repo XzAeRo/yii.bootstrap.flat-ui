@@ -21,6 +21,7 @@ You are allowed to use these elements anywhere you want, however I’ll highly a
 
 ## TO-DO
 + Allow 'checkbox' and 'switch' values in 'data-toggle' for checkbox elements.
++ Add IE html5 compatibility.
 
 ## Author
 
@@ -98,3 +99,8 @@ Under the main Web application configuration array, you need to add the followin
 
 
 Once you have done this, just refresh your Yii website and you should see the whole Flat UI theme in his full beauty.
+
+## Troubleshooting
+
++ **Theme not updating after installation:** check that you followed every step in the installation process, and verify the folder structure for the extension and the theme.
++ **I made some changes in the extension css, or javascript, and it's not being updated in the live website:** delete everything under the webroot assets folder `webroot/assets`, and then refresh you website in the browser.
