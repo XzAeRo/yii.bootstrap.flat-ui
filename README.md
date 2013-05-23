@@ -22,6 +22,7 @@ You are allowed to use these elements anywhere you want, however I’ll highly a
 ## TO-DO
 + Allow 'checkbox' and 'switch' values in 'data-toggle' for checkbox elements.
 + Add IE html5 compatibility.
++ Installer.
 
 ## Author
 
@@ -45,7 +46,7 @@ Also, you need to have access to the server files (this can be done via ftp or s
 
 ## Installation
 
-Once you have [downloaded the latest version](https://github.com/XzAeRo/yii.bootstrap.flat-ui/archive/master.zip), unzip the extension under +protected/extensions/bootstrap+. The folder structure should be something like this:
+Once you have [downloaded the latest version](https://github.com/XzAeRo/yii.bootstrap.flat-ui/archive/master.zip), unzip the extension under `protected/extensions/bootstrap`. The folder structure should be something like this:
 
 	webroot/
 		protected/
@@ -73,10 +74,10 @@ Now that you have everything in the right place, we need to tell Yii that we hav
 
 Under the main Web application configuration array, you need to add the following lines like this:
 
-
+	<?php
 	// Define a path alias for the Bootstrap extension as it's used internally.
 	// In this example we assume that you unzipped the extension under protected/extensions.
-	Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/flatui');
+	Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap/');
 	 
 	return array(
 		'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
